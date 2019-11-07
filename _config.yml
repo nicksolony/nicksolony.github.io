@@ -1,11 +1,11 @@
 # Site settings
-author: Nick Solonyy
-title: 
+author: Nick Solony
+title: Learn_to_code
 header-img: img/home-bg.png
 email: nicksolony@gmail.com
-copyright_name: Nick Solonyy
+copyright_name: Nick Solony
 description: > # this means to ignore newlines until "baseurl:"
-  
+  How did I learn to code
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  nicksolony
