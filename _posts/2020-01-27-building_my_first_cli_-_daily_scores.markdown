@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Building my first CLI - daily_scores"
-date:       2020-01-28 03:12:08 +0000
+title:      "Building my first CLI - daily scores"
+date:       2020-01-27 22:12:09 -0500
 permalink:  building_my_first_cli_-_daily_scores
 ---
 
