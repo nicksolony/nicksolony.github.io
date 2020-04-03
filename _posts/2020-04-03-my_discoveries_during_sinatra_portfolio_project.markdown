@@ -12,7 +12,7 @@ When I was planning my Sinatra Project, I was pretty confident in my idea (based
 ```
 gem install corneal
 ```
-With this line all magic starts, and you can learn more by visiting - [https://thebrianemory.github.io/corneal/](http://).
+With this line all magic starts, and you can learn more by visiting - [https://thebrianemory.github.io/corneal/](https://thebrianemory.github.io/corneal/).
 Once you install gem, create your app and run bundle, I would suggest using `corneal scaffold NAME` command. It's creates model and adds views and controllers for that model. 
 Thank you Brian Emory for creating this super useful Gem.
 
@@ -20,8 +20,8 @@ Thank you Brian Emory for creating this super useful Gem.
 Each record in database table has unique ID number, but it's not the most convienient way to identify records by just a number. It would be way better to have something more readable. Therefore in my database tables have at least one more unique column.
 ![]([img]\https://i.imgur.com/MgFaooN.png[/img])
 instructors, courses & course_groups tables have 1 common column - name. 
-[http://localhost:9393/instructors/anna](http://) looks and feels a lot better than [http://localhost:9393/instructors/1](http://), right?
-In the course we've learned about [slug](https://itnext.io/whats-a-slug-f7e74b6c23e0?gi=5bb7951d1921) - human-readable, unique identifier. So if you check this url -  [http://localhost:9393/instructors/anna](http://) - anna is a slug.
+[http://localhost:9393/instructors/anna](https://nicksolony.github.io/my_discoveries_during_sinatra_portfolio_project) looks and feels a lot better than [http://localhost:9393/instructors/1](https://nicksolony.github.io/my_discoveries_during_sinatra_portfolio_project), right?
+In the course we've learned about [slug](https://itnext.io/whats-a-slug-f7e74b6c23e0?gi=5bb7951d1921) - human-readable, unique identifier. So if you check this url -  [http://localhost:9393/instructors/anna](https://nicksolony.github.io/my_discoveries_during_sinatra_portfolio_project) - anna is a slug.
 How do we get it and how do we access records with slug, it's not part of the database?
 1. How do we create a slug? - we can use the method below
 ```
@@ -37,7 +37,7 @@ def find_by_slug(url)
 end
 ```
 These methods can be added to each model, but in order to keep code DRY it's best to create a module in concerns folder and use it in each model. So in order for me to be able to re-use same modules in all of my models, I used same column name - "name".
-While writing this post, I actually found a slugify gem - [https://rubygems.org/gems/slugify/versions/1.0.7](http://). Feel free to explore it.
+While writing this post, I actually found a slugify gem - [https://rubygems.org/gems/slugify/versions/1.0.7](https://rubygems.org/gems/slugify/versions/1.0.7). Feel free to explore it.
 
 ## CRUD / delete/ a href
 While working on navigation in my app, I've encountered following problem, I used `a href` links to navigate my app and to access edit function. When I tried to do the same for delete, my app broke.
