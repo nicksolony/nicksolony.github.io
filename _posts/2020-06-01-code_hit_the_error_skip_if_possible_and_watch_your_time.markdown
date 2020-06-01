@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Code, hit the error, skip if possible, and watch your time"
-date:       2020-06-01 04:01:48 +0000
+date:       2020-06-01 00:01:49 -0400
 permalink:  code_hit_the_error_skip_if_possible_and_watch_your_time
 ---
 
