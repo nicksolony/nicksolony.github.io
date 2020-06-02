@@ -39,7 +39,8 @@ I first started by building nested attributes in the form:
     <td><%= genres_fields.text_field :name %></td><%= genre_attributes.text_field :name %>    
   <% end %>
     </td>
-    </tr>```
+    </tr>
+	```
 
 Based on that form I was building custom writer for ```genre_attributes``` and tried using ```find_or_create_by``` and it looked like this:
 ```
