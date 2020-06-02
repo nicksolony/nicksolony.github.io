@@ -29,6 +29,7 @@ It's always so much easier to build code, based on something you've used or seen
 
 I first started by building nested attributes in the form:
 ```
+
 <tr>
   <td><h3>Genres:</h3></td>
   <td><%= f.fields_for :genre do |genre_attributes|%></td>
@@ -40,7 +41,8 @@ I first started by building nested attributes in the form:
   <% end %>
     </td>
     </tr>
-	```
+```
+	
 
 Based on that form I was building custom writer for ```genre_attributes``` and tried using ```find_or_create_by``` and it looked like this:
 ```
@@ -53,10 +55,11 @@ end
 ```
 My logic for the writer was pretty simple if the new Genre name field had any information, use ```find_or_create_by``` to find existing Genre in case the user didn't realize it already exists or creates a new one. Create part worked like a charm and new Genre was created and dynamically assigned to the movie, but it could never find the existing genre and I was hitting an error or creating duplicate records. Side note: duplicates in the database drive me crazy! I struggled for hours trying to find a way to make my code work, and all that time yielded ```nil``` results. Eventually, I decided that instead of wasting time on figuring this mess out, I would find a workaround. 
 I did some research and figured the easiest way around my problem would be to change the movie genre relationship and add a joint table. So I went ahead and created ```movie_genres``` table and in my movie class removed ```belongs_to :genres``` and added 
+
 ```
 has_many :movie_genres
 has_many :genres, through: :movie_genres
-    ```
+```
 From there it was simple few tweeks to the form:
 
 ```
